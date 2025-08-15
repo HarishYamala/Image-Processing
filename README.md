@@ -25,5 +25,3 @@ This project is a **Flask-based web application** that uses a **Convolutional Ne
 - **Dataset:** Rice Image Dataset (custom or public dataset)
 
 ---
-
-## 📂 Project Structure
