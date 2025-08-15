@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Georgia, serif;
+  background-image: url("/static/rice-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This centers the container vertically */
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.6); /* Soft white shade */
+  color: black;
+  border: 2px solid black;
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  margin-top: 50px; /* Nudge the container slightly lower from the center */
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+input[type="file"] {
+  margin-top: 15px;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #888;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="file"]:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #4CAF50, #2e7d32);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 5px #1b5e20;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  box-shadow: 0 2px #1b5e20;
+  transform: translateY(3px);
+}
+
+img {
+  max-width: 100%;
+  margin-top: 20px;
+  display: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-shadow: none;
+}
